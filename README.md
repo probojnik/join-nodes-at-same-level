@@ -3,6 +3,7 @@ Link nodes at same level in a binary tree
 Definition of data structures
 
 You are given a binary tree:
+
 	// C++
 	struct node{
 		int n; // value of node
@@ -37,17 +38,19 @@ Tasks to complete during coding test
 Example
 
 If you are given the tree:
-       1
-      / \
-     2   3
-    /   / \
-   4   5   6
+
+               1
+              / \
+             2   3
+            /   / \
+           4   5   6
 
 your implementation of linkSameLevel function should create the links (i.e. pointers) illustrated in bold below:
-       1
-      / \
-     2-> 3
-    /    / \
-   4->  5-> 6
+
+               1
+              / \
+             2-> 3
+            /   / \
+           4->  5-> 6
 
 
