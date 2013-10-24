@@ -8,14 +8,14 @@ You are given a binary tree:
 		int n; // value of node
 		struct node *left; // left subtree
 		struct node *right; // right subtree
-		struct node *level; // level pointer (node “to the right”)
+		struct node *level; // level pointer (node â€œto the rightâ€)
 	}
 	// If you would like to code in C#, consider following definition
 	public class Node{
 		public n; // value of node
 		public Node left; // left subtree
 		public Node right; // right subtree
-		public Node level; // level pointer (node “to the right”)
+		public Node level; // level pointer (node â€œto the rightâ€)
 	}
 
 Initially, the level field is set to NULL.
@@ -23,6 +23,7 @@ Initially, the level field is set to NULL.
 Tasks to complete during coding test
 
 	1. Write a function that will link all the nodes at the same level in a tree (not only from example, but any given tree).
+
 	// C++
 	void linkSameLevel(struct node *t);
 	// C#
@@ -32,19 +33,21 @@ Tasks to complete during coding test
 	
 	2. Please explain what the running time and memory usage of your function are for a tree of depth d containing n nodes.
 
+
 Example
 
 If you are given the tree:
        1
       / \
-     2  3
-    /    / \
-  4    5  6
+     2   3
+    /   / \
+   4   5   6
 
 your implementation of linkSameLevel function should create the links (i.e. pointers) illustrated in bold below:
        1
       / \
-     2->3
+     2-> 3
     /    / \
-  4 -> 5->6
+   4->  5-> 6
+
 
